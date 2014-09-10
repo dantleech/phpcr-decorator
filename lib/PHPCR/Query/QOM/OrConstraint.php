@@ -5,13 +5,13 @@
 namespace Sulu\Component\PhpcrDecorator\PHPCR\Query\QOM;
 
 
-class Selector implements \PHPCR\Query\QOM\SelectorInterface
+class OrConstraint implements \PHPCR\Query\QOM\OrInterface
 {
     protected $component;
     protected $decoratorFactory;
 
     public function __construct(
-        \PHPCR\Query\QOM\SelectorInterface $component,
+        \PHPCR\Query\QOM\OrInterface $component,
         \Sulu\Component\PhpcrDecorator\DecoratorFactoryInterface $decoratorFactory
     )
     {

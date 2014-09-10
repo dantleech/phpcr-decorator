@@ -5,18 +5,21 @@
 namespace Sulu\Component\PhpcrDecorator\PHPCR\Query\QOM;
 
 
-class Selector implements \PHPCR\Query\QOM\SelectorInterface
+class FullTextSearchConstraint implements \PHPCR\Query\QOM\FullTextSearchInterface
 {
     protected $component;
     protected $decoratorFactory;
 
     public function __construct(
-        \PHPCR\Query\QOM\SelectorInterface $component,
+        \PHPCR\Query\QOM\FullTextSearchInterface $component,
         \Sulu\Component\PhpcrDecorator\DecoratorFactoryInterface $decoratorFactory
     )
     {
         $this->component = $component;
         $this->decoratorFactory = $decoratorFactory;
+    }
+
+        return $this->getDecorator()->decorate(__METHOD__, $this->__component()->getFullTextSearchExpression());
     }
 
 }
