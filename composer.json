@@ -16,5 +16,11 @@
         "jackalope/jackalope-doctrine-dbal": "1.1.*",
         "symfony/finder": "2.*",
         "symfony/filesystem": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sulu\\Component\\PhpcrDecorator\\Tests\\": "tests",
+            "Sulu\\Component\\PhpcrDecorator\\": "lib"
+        }
     }
 }
